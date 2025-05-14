@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova - Tienda de Computadoras</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-laptop-code me-2"></i>TechNova
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Buscar productos..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="ms-3">
+                    <a href="#" class="btn btn-sm btn-purple-light">
+                        <i class="fas fa-shopping-cart"></i> <span class="badge bg-danger">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold mb-4">Las mejores computadoras del mercado</h1>
+                    <p class="lead mb-4">Encuentra el equipo perfecto para tus necesidades, desde gaming hasta trabajo profesional.</p>
+                    <a href="#" class="btn btn-lg btn-purple me-2">Ver productos</a>
+                    <a href="#" class="btn btn-lg btn-outline-purple">Ofertas especiales</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" alt="Computadora de alta gama" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold">Productos destacados</h2>
+                <a href="#" class="btn btn-sm btn-outline-purple">Ver todos</a>
+            </div>
+            
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card h-100">
+                        <span class="badge bg-danger position-absolute top-0 end-0 m-2">15% OFF</span>
+                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80" class="card-img-top" alt="Laptop Gaming">
+                        <div class="card-body">
+                            <h5 class="card-title">Laptop Gaming Pro</h5>
+                            <div class="mb-2">
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span class="text-muted ms-1">(48)</span>
+                            </div>
+                            <p class="card-text">Potente laptop para gamers con RTX 3080 y procesador i9 de última generación.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="text-decoration-line-through text-muted me-2">$2,499</span>
+                                    <span class="fw-bold text-purple">$2,124</span>
+                                </div>
+                                <button class="btn btn-sm btn-purple">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1546054454-aa26e2b734c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80" class="card-img-top" alt="PC Workstation">
+                        <div class="card-body">
+                            <h5 class="card-title">Workstation Elite</h5>
+                            <div class="mb-2">
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <span class="text-muted ms-1">(32)</span>
+                            </div>
+                            <p class="card-text">Estación de trabajo profesional para diseño y edición de video.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="fw-bold text-purple">$3,299</span>
+                                </div>
+                                <button class="btn btn-sm btn-purple">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card h-100">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">Nuevo</span>
+                        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" class="card-img-top" alt="Laptop Ultradelgada">
+                        <div class="card-body">
+                            <h5 class="card-title">Ultrabook Slim</h5>
+                            <div class="mb-2">
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-muted ms-1">(64)</span>
+                            </div>
+                            <p class="card-text">Laptop ultradelgada con pantalla 4K y 12 horas de batería.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="fw-bold text-purple">$1,799</span>
+                                </div>
+                                <button class="btn btn-sm btn-purple">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-5 bg-dark2">
+        <div class="container">
+            <h2 class="fw-bold mb-4 text-center">Explora por categoría</h2>
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4">
+                    <a href="#" class="category-card">
+                        <div class="card bg-dark3 text-center p-4">
+                            <i class="fas fa-gamepad fa-3x mb-3 text-purple"></i>
+                            <h5 class="mb-0">Gaming</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <a href="#" class="category-card">
+                        <div class="card bg-dark3 text-center p-4">
+                            <i class="fas fa-briefcase fa-3x mb-3 text-purple"></i>
+                            <h5 class="mb-0">Negocios</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <a href="#" class="category-card">
+                        <div class="card bg-dark3 text-center p-4">
+                            <i class="fas fa-paint-brush fa-3x mb-3 text-purple"></i>
+                            <h5 class="mb-0">Diseño</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <a href="#" class="category-card">
+                        <div class="card bg-dark3 text-center p-4">
+                            <i class="fas fa-home fa-3x mb-3 text-purple"></i>
+                            <h5 class="mb-0">Hogar</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="fw-bold mb-3">Suscríbete a nuestro boletín</h2>
+                    <p class="lead mb-4">Recibe ofertas exclusivas y las últimas novedades en tecnología directamente en tu correo.</p>
+                    <form class="row g-2 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control form-control-lg" placeholder="Tu correo electrónico">
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-purple btn-lg w-100">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark2 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-laptop-code me-2"></i>TechNova</h5>
+                    <p>Tu tienda de confianza para encontrar las mejores computadoras y accesorios al mejor precio.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-purple me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-purple me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-purple me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-purple"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class="fw-bold mb-3">Productos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" >Laptops</a></li>
+                        <li class="mb-2"><a href="#" >PCs de Escritorio</a></li>
+                        <li class="mb-2"><a href="#" >Componentes</a></li>
+                        <li class="mb-2"><a href="#" >Accesorios</a></li>
+                        <li><a href="#" >Ofertas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class="fw-bold mb-3">Soporte</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" >Contacto</a></li>
+                        <li class="mb-2"><a href="#" >FAQ</a></li>
+                        <li class="mb-2"><a href="#" >Envíos</a></li>
+                        <li class="mb-2"><a href="#" >Devoluciones</a></li>
+                        <li><a href="#" >Garantías</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-purple"></i> Av. Tecnología 123, CDMX</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2 text-purple"></i> (55) 1234 5678</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2 text-purple"></i> info@technova.com</li>
+                        <li class="mb-2"><i class="fas fa-clock me-2 text-purple"></i> Lunes a Viernes: 9am - 7pm</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-dark">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-muted mb-0">© 2023 TechNova. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small text-muted mb-0">
+                        <a href="#" >Términos y condiciones</a> | 
+                        <a href="#" >Política de privacidad</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
